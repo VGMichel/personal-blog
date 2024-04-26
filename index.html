@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./assets/styles/main.css">
 </head>
 <body>
-
+    <!-- NAVIGATION START -->
     <header class="header flex flex-end align-items-center">
         <!-- Nav Logo -->
         <a href="index.html" class="nav-logo">
@@ -43,85 +43,105 @@
             </div>
         </nav>
     </header>
+    <!-- NAVIGATION END -->
 
-    <section class="articles__section flex">
-        <div class="container">
-            <div class="title flex justify-content-center">
-                <h1>Blog Posts</h1>
+    <!-- MAIN START -->
+    <section class="main flex">
+    
+        <!-- SIDEBAR START -->
+        <section class="sidebar flex">
+            <h2 class="popular__title">Popular Topics</h2>
+            <ul>
+                <li class="popular__item">
+                    <a href="#">Test Title</a>
+                </li>
+                <li class="popular__item"></li>
+                <li class="popular__item"></li>
+                <li class="popular__item"></li>
+                <li class="popular__item"></li>
+            </ul>
+        </section>
+        <!-- SIDEBAR START -->
+
+        <!-- ARTICLES START -->
+        <section class="articles__section">
+            <div class="container">
+                <div class="title flex justify-content-center">
+                    <h1>Featured Posts</h1>
+                </div>
+                <!-- Article list starts here -->
+                <div class="article__list">
+                    <article id="1" class="article__item">
+                        <div class="img__container">
+                            <img src="./assets/img/test-img_1.jpg" alt="image-1">
+                        </div>
+                        <h3>Title 1</h3>
+                        <p class="text">Lorem ipsum dummy text insert</p>
+                        <span>
+                            <div>Date posted</div>
+                            <button class="btn-primary">
+                                <a class="read-more" href="post-1.html">Read More</a>
+                            </button>
+                        </span>
+                    </article>
+                    <article id="2" class="article__item">
+                        <div class="img__container">
+                            <img src="./assets/img/test-img_2.jpg" alt="image-2">
+                        </div>
+                        <h3>Title 1</h3>
+                        <p class="text">Lorem ipsum dummy text insert</p>
+                        <span>
+                            <div>Date posted</div>
+                            <button class="btn-primary">
+                                <a class="read-more" href="post-1.html">Read More</a>
+                            </button>
+                        </span>
+                    </article>
+                    <article id="3" class="article__item">
+                        <img src="" alt="image-3">
+                        <h3>Title 1</h3>
+                        <p class="text">Lorem ipsum dummy text insert</p>
+                        <span>
+                            <div>Date posted</div>
+                            <button class="btn-primary">
+                                <a class="read-more" href="post-1.html">Read More</a>
+                            </button>
+                        </span>
+                    </article>
+                    <article id="4" class="article__item">
+                        <div class="img__container">
+                            <img src="./assets/img/test-img_2.jpg" alt="image-2">
+                        </div>
+                        <h3>Title 1</h3>
+                        <p class="text">Lorem ipsum dummy text insert</p>
+                        <span>
+                            <div>Date posted</div>
+                            <button class="btn-primary">
+                                <a class="read-more" href="post-1.html">Read More</a>
+                            </button>
+                        </span>
+                    </article>
+                    <article id="5" class="article__item">
+                        <div class="img__container">
+                            <img src="./assets/img/test-img_2.jpg" alt="image-2">
+                        </div>
+                        <h3>Title 1</h3>
+                        <p class="text">Lorem ipsum dummy text insert</p>
+                        <span>
+                            <div>Date posted</div>
+                            <button class="btn-primary">
+                                <a class="read-more" href="post-1.html">Read More</a>
+                            </button>
+                        </span>
+                    </article>
+                    <!-- <article id="6" class="article__item"></article>
+                    <article id="7" class="article__item"></article> -->
+                </div>
             </div>
-
-            <!-- Article list starts here -->
-            <div class="article__list">
-                <article id="1" class="article__item">
-                    <div class="img__container">
-                        <img src="./assets/img/test-img_1.jpg" alt="image-1">
-                    </div>
-                    <h3>Title 1</h3>
-                    <p class="text">Lorem ipsum dummy text insert</p>
-                    <span>
-                        <div>Date posted</div>
-                        <button class="btn-primary">
-                            <a class="read-more" href="post-1.html">Read More</a>
-                        </button>
-                    </span>
-                </article>
-
-                <article id="2" class="article__item">
-                    <div class="img__container">
-                        <img src="./assets/img/test-img_2.jpg" alt="image-2">
-                    </div>
-                    <h3>Title 1</h3>
-                    <p class="text">Lorem ipsum dummy text insert</p>
-                    <span>
-                        <div>Date posted</div>
-                        <button class="btn-primary">
-                            <a class="read-more" href="post-1.html">Read More</a>
-                        </button>
-                    </span>
-                </article>
-
-                <article id="3" class="article__item">
-                    <img src="" alt="image-3">
-                    <h3>Title 1</h3>
-                    <p class="text">Lorem ipsum dummy text insert</p>
-                    <span>
-                        <div>Date posted</div>
-                        <button class="btn-primary">
-                            <a class="read-more" href="post-1.html">Read More</a>
-                        </button>
-                    </span>
-                </article>
-                <article id="4" class="article__item">
-                    <div class="img__container">
-                        <img src="./assets/img/test-img_2.jpg" alt="image-2">
-                    </div>
-                    <h3>Title 1</h3>
-                    <p class="text">Lorem ipsum dummy text insert</p>
-                    <span>
-                        <div>Date posted</div>
-                        <button class="btn-primary">
-                            <a class="read-more" href="post-1.html">Read More</a>
-                        </button>
-                    </span>
-                </article>
-                <article id="5" class="article__item">
-                    <div class="img__container">
-                        <img src="./assets/img/test-img_2.jpg" alt="image-2">
-                    </div>
-                    <h3>Title 1</h3>
-                    <p class="text">Lorem ipsum dummy text insert</p>
-                    <span>
-                        <div>Date posted</div>
-                        <button class="btn-primary">
-                            <a class="read-more" href="post-1.html">Read More</a>
-                        </button>
-                    </span>
-                </article>
-                <!-- <article id="6" class="article__item"></article>
-                <article id="7" class="article__item"></article> -->
-            </div>
-        </div>
+        </section>
+        <!-- ARTICLES SECTION END -->
     </section>
+    <!-- MAIN END -->
     
 </body>
 </html>

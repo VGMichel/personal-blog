@@ -18,6 +18,7 @@ Root Styles
     --orange: #c58b2d;
     --white: #fff;
     --black: #000;
+    --light-gray: #bbbbbb;
 }
 
 html {
@@ -32,9 +33,9 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font1);
 }
 
-/* p, a {
+p, a {
     font-family: var(--font2);
-} */
+}
 
 section {
     width: 100%;
@@ -119,9 +120,37 @@ Navigation
 }
 
 /*----------------------
+Sidebar Section
+------------------------*/
+.sidebar {
+    width: 20%;
+    flex-direction: column;
+    margin: 50px;
+}
+
+.popular__title {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.popular__item {
+    padding: 30px 0;
+    margin-top: 20px;
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.popular__item a {
+    color: var(--orange);
+}
+    .popular__item a:hover {
+        color: var(--black);
+    }
+
+
+/*----------------------
 Article List Section
 ------------------------*/
-.articles__section {
+.main {
     width: 100%;
     padding: 40px 60px;
     /* background: pink; */
@@ -133,7 +162,7 @@ Article List Section
 }
 
 .title h1 {
-    font-size: 50px;
+    font-size: 45px;
     font-weight: 600;
 }
 
