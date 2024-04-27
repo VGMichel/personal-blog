@@ -7,7 +7,6 @@ Navigation
     font-size: 15px;
     font-weight: 300;
     background-color: var(--white);
-    border-bottom: 1px solid #bbbbbb;
 }
 
 .nav li {
@@ -40,4 +39,9 @@ Navigation
 
 .controller {
     width: 35px;
+}
+
+.menu__icon {
+    display: none;
+    cursor: pointer;
 }
