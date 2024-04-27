@@ -75,13 +75,53 @@ Hero Section
 ------------------------*/
 
 .hero {
+    padding: 30px 0;
     color: var(--white);
     background: var(--black);
 }
 
-.hero, .post__hero {
-    padding: 30px 0;
+/* .post__hero {
+    margin-bottom: 30px;
+} */
+
+.post__hero-img {
+    object-fit: cover;
+    object-position: 50% 25%;
+    width: 100%;
+    height: 500px;
 }
+
+.post2__hero-img {
+    object-fit: cover;
+    object-position: 50% 25%;
+    width: 1520px;
+    height: 500px;
+}
+
+.hero__img {
+    object-fit: cover;
+    width: 900px;
+    height: 340px;
+}
+
+/*----------------------
+Post Section
+------------------------*/
+
+.post__section {
+    max-width: 1100px;
+}
+
+.post__title {
+    margin: 50px 0;
+    width: 100%;
+}
+
+.post__title h1 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
 
 /*----------------------
 Sidebar Section
@@ -119,6 +159,10 @@ Article List Section
     /* background: pink; */
 }
 
+.articles__section {
+    margin-top: 40px;
+}
+
 .title {
     margin: 50px;
     width: 100%;
@@ -134,6 +178,7 @@ Article List Section
     /* grid-template-columns: 400px 400px 400px; */
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 20px;
+    place-items: center;
 }
 
 .article__item {
@@ -149,12 +194,6 @@ Article List Section
     object-fit: cover;
     width: 400px;
     height: 450px;
-}
-
-.hero__img {
-    object-fit: cover;
-    width: 900px;
-    height: 340px;
 }
 
 .img__container {
@@ -174,9 +213,53 @@ Article List Section
 }
 
 .post__details > * {
-    margin: 10px 0;
-    padding: 0 15px
+    margin: 13px 0;
+    padding: 0 8px
 }
+
+.post__details h3 {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.text__link {
+    color: var(--black);
+}
+
+.text__link:hover {
+    color: var(--orange);
+}
+
+.post__details .text {
+    margin-bottom: 16px;
+}
+
+
+/*----------------------
+Author Details (for a blog post)
+------------------------*/
+
+.icon__img {
+    border-radius: 50%;
+    background: #c58b2d;
+    width: 70px;
+    height: 70px;
+}
+
+.details > * {
+    margin-top: 8px;
+    padding: 0 10px;
+}
+
+.author__socials img {
+    width: 24px;
+}
+
+.author__socials a:hover {
+    color: var(--orange);
+}
+
+
 
 /*----------------------
 Footer
