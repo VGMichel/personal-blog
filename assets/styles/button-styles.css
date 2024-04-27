@@ -1,7 +1,8 @@
 /* Button Styles */
 .btn__primary {
+    color: var(--white);
     margin-left: 20px;
-    font-family: var(--font1);
+    font-family: var(--font2);
     font-weight: 300;
     background: var(--orange);
     border-radius: 50px;
