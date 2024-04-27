@@ -4,6 +4,9 @@ Imports
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@1,100..900&family=Roboto:ital,wght@0,300;0,400;1,400&display=swap');
 
+@import url('./flex-styles.css');
+@import url('./navigation.css');
+@import url('./media-queries.css');
 
 /*----------------------
 Root Styles
@@ -20,6 +23,8 @@ Root Styles
     --black: #000;
     --light-gray: #bbbbbb;
 }
+
+/* Base Styles */
 
 html {
     scroll-behavior: smooth;
@@ -39,23 +44,6 @@ p, a {
 
 section {
     width: 100%;
-}
-
-/* Flex Styles */
-
-.flex {
-    display: flex;
-}
-.flex-end {
-    justify-content: flex-end;
-}
-
-.justify-content-center {
-    justify-content: center;
-}
-
-.align-items-center {
-    align-items: center;
 }
 
 /* Button Styles */
@@ -83,43 +71,16 @@ section {
 }
 
 /*----------------------
-Navigation
+Hero Section
 ------------------------*/
-.header {
-    padding: 20px 50px;
-    font-family: var(--font1);
-    font-size: 15px;
-    font-weight: 300;
-    background-color: var(--white);
-    border-bottom: 1px solid #bbbbbb;
+
+.hero {
+    color: var(--white);
+    background: var(--black);
 }
 
-.nav li {
-    list-style: none;
-    display: inline-block;
-    padding: 0 20px;
-}
-
-.nav a {
-    color: #555;
-    transition: all 0.3s ease 0s;
-}
-
-.nav a:hover {
-    color: var(--orange)
-}
-
-/* Logo */
-.nav-logo {
-    font-size: 30px;
-    font-weight: 400;
-    color: var(--orange);
-    margin-right: auto;
-}
-
-.nav-logo span {
-    font-weight: 600;
-    color: var(--black);
+.hero, .post__hero {
+    padding: 30px 0;
 }
 
 /*----------------------
@@ -149,13 +110,12 @@ Sidebar Section
         color: var(--black);
     }
 
-
 /*----------------------
 Article List Section
 ------------------------*/
 .main {
     width: 100%;
-    padding: 40px 60px;
+    padding: 0px 40px;
     /* background: pink; */
 }
 
@@ -178,15 +138,28 @@ Article List Section
 
 .article__item {
     max-width: 400px;
+    margin: 15px 0;
 }
 
 .article__item .text {
     font-family: var(--font2);
 }
 
+.cover {
+    object-fit: cover;
+    width: 400px;
+    height: 450px;
+}
+
+.hero__img {
+    object-fit: cover;
+    width: 900px;
+    height: 340px;
+}
+
 .img__container {
     width: 400px;
-    /* height: 450px; */
+    height: 450px;
     border-radius: 20px;
     overflow: hidden;
 }
@@ -202,6 +175,7 @@ Article List Section
 
 .post__details > * {
     margin: 10px 0;
+    padding: 0 15px
 }
 
 /*----------------------
@@ -218,30 +192,4 @@ footer {
 
 .social__links ul li {
     padding: 0 8px 0;
-}
-
-/*----------------------
-Media Queries
-------------------------*/
-@media only screen and (max-width: 680px) {
-  
-    .container {
-        display: flex;
-        align-items: center;
-    }
-  
-    .main {
-    flex-direction: column-reverse;
-    justify-content: center;
-  }
-
-  .sidebar {
-    width: 100%;
-    padding: 50px;
-    margin: 0;
-  }
-
-  .article__item {
-    margin: 20px 0;
-  }
 }

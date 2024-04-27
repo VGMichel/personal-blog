@@ -1,0 +1,39 @@
+/*----------------------
+Navigation
+------------------------*/
+.header {
+    padding: 20px 50px;
+    font-family: var(--font1);
+    font-size: 15px;
+    font-weight: 300;
+    background-color: var(--white);
+    border-bottom: 1px solid #bbbbbb;
+}
+
+.nav li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.nav a {
+    color: #555;
+    transition: all 0.3s ease 0s;
+}
+
+.nav a:hover {
+    color: var(--orange)
+}
+
+/* Logo */
+.nav-logo {
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--orange);
+    margin-right: auto;
+}
+
+.nav-logo span {
+    font-weight: 600;
+    color: var(--black);
+}
