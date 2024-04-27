@@ -6,7 +6,7 @@ Imports
 
 @import url('./flex-styles.css');
 @import url('./navigation.css');
-@import url('./media-queries.css');
+@import url('./button-styles.css');
 
 /*----------------------
 Root Styles
@@ -44,25 +44,6 @@ p, a {
 
 section {
     width: 100%;
-}
-
-/* Button Styles */
-.btn__primary {
-    margin-left: 20px;
-    font-family: var(--font1);
-    font-weight: 300;
-    background: var(--orange);
-    border-radius: 50px;
-}
-
-    .btn__primary:hover {
-        background: var(--black);
-    }
-
-.btn__primary a {
-    letter-spacing: 0.6px;
-    font-size: 15px;
-    color: var(--white);
 }
 
 .container {
@@ -104,24 +85,23 @@ Hero Section
     height: 340px;
 }
 
-/*----------------------
-Post Section
-------------------------*/
-
-.post__section {
-    max-width: 1100px;
+.hero__post {
+    flex-direction: column;
+    justify-content: space-around;
+    width: 400px;
 }
 
-.post__title {
-    margin: 50px 0;
-    width: 100%;
-}
-
-.post__title h1 {
+.hero__title {
     font-size: 30px;
-    font-weight: 600;
 }
 
+.hero__btn {
+    margin: 0;
+}
+
+.hero__btn:hover {
+    background: #d8a047;
+}
 
 /*----------------------
 Sidebar Section
@@ -137,9 +117,12 @@ Sidebar Section
     font-weight: 500;
 }
 
+.popular__title-list li:last-child {
+    border: none;
+}
+
 .popular__item {
     padding: 20px 0;
-    margin-top: 20px;
     border-bottom: 1px solid var(--light-gray);
 }
 
@@ -212,6 +195,8 @@ Article List Section
     justify-content: space-between;
 }
 
+/* Blog post cards on homepage */
+
 .post__details > * {
     margin: 13px 0;
     padding: 0 8px
@@ -238,12 +223,13 @@ Article List Section
 /*----------------------
 Author Details (for a blog post)
 ------------------------*/
-
+.author {
+    margin: 30px 0;
+}
 .icon__img {
     border-radius: 50%;
-    background: #c58b2d;
-    width: 70px;
-    height: 70px;
+    width: 64px;
+    height: 64px;
 }
 
 .details > * {
@@ -260,6 +246,39 @@ Author Details (for a blog post)
 }
 
 
+/*----------------------
+Blog Post Section
+------------------------*/
+
+.post__section {
+    max-width: 1100px;
+}
+
+.post__title {
+    flex-direction: column;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.post__title > * {
+    margin: 5px 0;
+}
+
+.post__title h1 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.post__title p {
+    color: var(--light-gray);
+}
+
+.post__content {
+    padding: 20px 0;
+    font-size: 18px;
+    line-height: 25px;
+}
+
 
 /*----------------------
 Footer
@@ -275,4 +294,39 @@ footer {
 
 .social__links ul li {
     padding: 0 8px 0;
+}
+
+.social__links ul li a img {
+    background: var(--white);
+}
+
+.footer__fb {
+    background-image: url('./assets/img/social-icons/facebook.svg');
+}
+
+/*----------------------
+Media Queries
+------------------------*/
+
+@media only screen and (max-width: 680px) {
+  
+    .container {
+        display: flex;
+        align-items: center;
+    }
+  
+    .main {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .sidebar {
+        width: 400px;
+        padding: 5px;
+        margin: 10px 0;
+    }
+
+    .article__item {
+        margin: 20px 0;
+    }
 }

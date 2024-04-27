@@ -1,0 +1,18 @@
+/* Button Styles */
+.btn__primary {
+    margin-left: 20px;
+    font-family: var(--font1);
+    font-weight: 300;
+    background: var(--orange);
+    border-radius: 50px;
+}
+
+    .btn__primary:hover {
+        background: var(--black);
+    }
+
+.btn__primary a {
+    letter-spacing: 0.6px;
+    font-size: 15px;
+    color: var(--white);
+}

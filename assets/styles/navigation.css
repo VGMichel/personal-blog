@@ -33,7 +33,11 @@ Navigation
     margin-right: auto;
 }
 
-.nav-logo span {
+.logo__bold {
     font-weight: 600;
     color: var(--black);
+}
+
+.controller {
+    width: 35px;
 }
